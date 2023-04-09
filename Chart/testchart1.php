@@ -12,66 +12,66 @@ while ($row = mysqli_fetch_assoc($query)) {
     $data[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
-$query1 = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
+$queryA = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
         JOIN tbl_pilihan_jawaban ON tbl_jawaban.id_pilihan_jawaban = tbl_pilihan_jawaban.id_pilihan
         join tbl_pertanyaan on tbl_pertanyaan.id_pertanyaan = tbl_jawaban.id_pertanyaan
         WHERE tbl_pertanyaan.id_pertanyaan = 12
         GROUP BY pilihan_jawaban");
-$data1 = array();
-while ($row = mysqli_fetch_assoc($query1)) {
-    $data1[] = array($row['pilihan_jawaban'], $row['jumlah']);
+$dataA = array();
+while ($row = mysqli_fetch_assoc($queryA)) {
+    $dataA[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
-$query2 = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
+$queryB = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
         JOIN tbl_pilihan_jawaban ON tbl_jawaban.id_pilihan_jawaban = tbl_pilihan_jawaban.id_pilihan
         join tbl_pertanyaan on tbl_pertanyaan.id_pertanyaan = tbl_jawaban.id_pertanyaan
         WHERE tbl_pertanyaan.id_pertanyaan = 15
         GROUP BY pilihan_jawaban");
-$data2 = array();
-while ($row = mysqli_fetch_assoc($query2)) {
-    $data2[] = array($row['pilihan_jawaban'], $row['jumlah']);
+$dataB = array();
+while ($row = mysqli_fetch_assoc($queryB)) {
+    $dataB[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
-$query4 = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
+$queryC = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
         JOIN tbl_pilihan_jawaban ON tbl_jawaban.id_pilihan_jawaban = tbl_pilihan_jawaban.id_pilihan
         join tbl_pertanyaan on tbl_pertanyaan.id_pertanyaan = tbl_jawaban.id_pertanyaan
         WHERE tbl_pertanyaan.id_pertanyaan = 16
         GROUP BY pilihan_jawaban");
 
-$data4 = array();
-while ($row = mysqli_fetch_assoc($query4)) {
-    $data4[] = array($row['pilihan_jawaban'], $row['jumlah']);
+$dataC = array();
+while ($row = mysqli_fetch_assoc($queryC)) {
+    $dataC[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
 
 
 
-$query5a = mysqli_query($conn, "SELECT COUNT(*) AS jumlah FROM user WHERE role_id = 2");
-$query5b = mysqli_query($conn, "SELECT id_user, COUNT(DISTINCT id_user) AS jumlah FROM tbl_jawaban");
-$data5a = mysqli_fetch_assoc($query5a);
-$data5b = mysqli_fetch_assoc($query5b);
+$queryDA = mysqli_query($conn, "SELECT COUNT(*) AS jumlah FROM user WHERE role_id = 2");
+$queryDB = mysqli_query($conn, "SELECT id_user, COUNT(DISTINCT id_user) AS jumlah FROM tbl_jawaban");
+$dataDA = mysqli_fetch_assoc($queryDA);
+$dataDB = mysqli_fetch_assoc($queryDB);
 
-$query6 = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
+$queryE = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
             JOIN tbl_pilihan_jawaban ON tbl_jawaban.id_pilihan_jawaban = tbl_pilihan_jawaban.id_pilihan
             join tbl_pertanyaan on tbl_pertanyaan.id_pertanyaan = tbl_jawaban.id_pertanyaan
             WHERE tbl_pertanyaan.id_pertanyaan = 21
             GROUP BY pilihan_jawaban");
 
-$data6 = array();
-while ($row = mysqli_fetch_assoc($query6)) {
-    $data6[] = array($row['pilihan_jawaban'], $row['jumlah']);
+$dataE = array();
+while ($row = mysqli_fetch_assoc($queryE)) {
+    $dataE[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
 
-$query7 = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
+$queryF = mysqli_query($conn, "SELECT pilihan_jawaban, COUNT(*) AS jumlah FROM tbl_jawaban
             JOIN tbl_pilihan_jawaban ON tbl_jawaban.id_pilihan_jawaban = tbl_pilihan_jawaban.id_pilihan
             join tbl_pertanyaan on tbl_pertanyaan.id_pertanyaan = tbl_jawaban.id_pertanyaan
             WHERE tbl_pertanyaan.id_pertanyaan = 22
             GROUP BY pilihan_jawaban");
 
-$data7 = array();
-while ($row = mysqli_fetch_assoc($query7)) {
-    $data7[] = array($row['pilihan_jawaban'], $row['jumlah']);
+$dataF = array();
+while ($row = mysqli_fetch_assoc($queryF)) {
+    $dataF[] = array($row['pilihan_jawaban'], $row['jumlah']);
 }
 
 
@@ -99,7 +99,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>Pilihan Jawaban</th>
                 <th>Jumlah Jawaban</th>
             </tr>
-            <?php foreach ($data4 as $d) { ?>
+            <?php foreach ($dataC as $d) { ?>
                 <tr>
                     <td><?php echo $d[0]; ?></td>
                     <td><?php echo $d[1]; ?></td>
@@ -107,7 +107,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
             <?php } ?>
         </table>
         <br>
-        <canvas id="myChart4" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart1" style="margin-bottom: 20px;"></canvas>
     </div>
     <br>
     <div class="Q2">
@@ -127,7 +127,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
         </table>
         <br>
         <div>
-            <canvas id="myChart" style="margin-bottom: 20px;"></canvas>
+            <canvas id="myChart2" style="margin-bottom: 20px;"></canvas>
         </div>
     </div>
     <br>
@@ -140,12 +140,12 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>Total User Yang Mengisi Kuisioner</th>
             </tr>
             <tr>
-                <td><?php echo $data5a['jumlah']; ?></td>
-                <td><?php echo $data5b['jumlah']; ?></td>
+                <td><?php echo $dataDA['jumlah']; ?></td>
+                <td><?php echo $dataDB['jumlah']; ?></td>
             </tr>
         </table>
         <br>
-        <canvas id="myChart5" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart3" style="margin-bottom: 20px;"></canvas>
     </div>
     <br>
     <div class="Q4">
@@ -156,7 +156,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>Keselarasan Horisontal</th>
                 <th>Jumlah Jawaban</th>
             </tr>
-            <?php foreach ($data6 as $d) { ?>
+            <?php foreach ($dataE as $d) { ?>
                 <tr>
                     <td><?php echo $d[0]; ?></td>
                     <td><?php echo $d[1]; ?></td>
@@ -164,7 +164,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
             <?php } ?>
         </table>
         <br>
-        <canvas id="myChart6" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart4" style="margin-bottom: 20px;"></canvas>
     </div>
     <br>
     <div class="Q5">
@@ -175,7 +175,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>Keselarasan Vertikal</th>
                 <th>Jumlah Jawaban</th>
             </tr>
-            <?php foreach ($data7 as $d) { ?>
+            <?php foreach ($dataF as $d) { ?>
                 <tr>
                     <td><?php echo $d[0]; ?></td>
                     <td><?php echo $d[1]; ?></td>
@@ -183,7 +183,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
             <?php } ?>
         </table>
         <br>
-        <canvas id="myChart7" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart5" style="margin-bottom: 20px;"></canvas>
     </div>
     <br>
     <div class="Q6">
@@ -193,7 +193,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>BESARAN GAJI/PENGHASILAN</th>
                 <th>Jumlah Jawaban</th>
             </tr>
-            <?php foreach ($data2 as $d) { ?>
+            <?php foreach ($dataB as $d) { ?>
                 <tr>
                     <td><?php echo $d[0]; ?></td>
                     <td><?php echo $d[1]; ?></td>
@@ -201,7 +201,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
             <?php } ?>
         </table>
         <br>
-        <canvas id="myChart3" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart6" style="margin-bottom: 20px;"></canvas>
     </div>
 
     <br>
@@ -211,7 +211,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
                 <th>Pilihan Jawaban</th>
                 <th>Jumlah Jawaban</th>
             </tr>
-            <?php foreach ($data1 as $d) { ?>
+            <?php foreach ($dataA as $d) { ?>
                 <tr>
                     <td><?php echo $d[0]; ?></td>
                     <td><?php echo $d[1]; ?></td>
@@ -220,7 +220,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
         </table>
         <br>
         <h1 style="text-align: center;"> <b>SUMBER DANA DALAM PEMBIAYAAN</b> </h1>
-        <canvas id="myChart1" style="margin-bottom: 20px;"></canvas>
+        <canvas id="myChart7" style="margin-bottom: 20px;"></canvas>
     </div>
     <br>
 
@@ -229,7 +229,7 @@ while ($row = mysqli_fetch_assoc($query7)) {
         document.getElementById("download-btn").addEventListener("click", downloadChart);
 
         function downloadChart() {
-            var canvas = document.getElementById("myChart");
+            var canvas = document.getElementById("myChart1");
             var img = canvas.toDataURL("image/png", 1.0);
             var doc = new jsPDF('p', 'mm', 'a4');
             doc.addImage(img, 'PNG', 10, 10, 190, 100);
@@ -239,9 +239,51 @@ while ($row = mysqli_fetch_assoc($query7)) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script>
         // Membuat variabel data yang berisi data dari PHP
+        var dataC = <?php echo json_encode($dataC); ?>;
+        // Membuat chart menggunakan Chart.js
+        var ctx = document.getElementById('myChart1').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: dataC.map(function(d) {
+                    return d[0];
+                }),
+                datasets: [{
+                    label: 'Jumlah Jawaban',
+                    data: dataC.map(function(d) {
+                        return d[1];
+                    }),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        // Membuat variabel data yang berisi data dari PHP
         var data = <?php echo json_encode($data); ?>;
         // Membuat chart menggunakan Chart.js
-        var ctx = document.getElementById('myChart').getContext('2d');
+        var ctx = document.getElementById('myChart2').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -284,137 +326,9 @@ while ($row = mysqli_fetch_assoc($query7)) {
         });
     </script>
     <script>
-        // Membuat variabel data yang berisi data dari PHP
-        var data1 = <?php echo json_encode($data1); ?>;
-        // Membuat chart menggunakan Chart.js
-        var ctx = document.getElementById('myChart1').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: data1.map(function(d) {
-                    return d[0];
-                }),
-                datasets: [{
-                    label: 'Jumlah Jawaban',
-                    data: data1.map(function(d) {
-                        return d[1];
-                    }),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-
-    <script>
-        // Membuat variabel data yang berisi data dari PHP
-        var data2$data2 = <?php echo json_encode($data2); ?>;
-        // Membuat chart menggunakan Chart.js
         var ctx = document.getElementById('myChart3').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: data2$data2.map(function(d) {
-                    return d[0];
-                }),
-                datasets: [{
-                    label: 'Jumlah Jawaban',
-                    data: data2$data2.map(function(d) {
-                        return d[1];
-                    }),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-    <script>
-        // Membuat variabel data yang berisi data dari PHP
-        var data4 = <?php echo json_encode($data4); ?>;
-        // Membuat chart menggunakan Chart.js
-        var ctx = document.getElementById('myChart4').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: data4.map(function(d) {
-                    return d[0];
-                }),
-                datasets: [{
-                    label: 'Jumlah Jawaban',
-                    data: data4.map(function(d) {
-                        return d[1];
-                    }),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
-
-    <script>
-        var ctx = document.getElementById('myChart5').getContext('2d');
         var label = ["Jumlah Alumni", "Jumlah Alumni Yang Mengisi Kuesioner"];
-        var data = [<?php echo $data5a['jumlah']; ?>, <?php echo $data5b['jumlah']; ?>];
+        var data = [<?php echo $dataDA['jumlah']; ?>, <?php echo $dataDB['jumlah']; ?>];
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
@@ -445,18 +359,18 @@ while ($row = mysqli_fetch_assoc($query7)) {
 
     <script>
         // Membuat variabel data yang berisi data dari PHP
-        var data6 = <?php echo json_encode($data6); ?>;
+        var dataE = <?php echo json_encode($dataE); ?>;
         // Membuat chart menggunakan Chart.js
-        var ctx = document.getElementById('myChart6').getContext('2d');
+        var ctx = document.getElementById('myChart4').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: data6.map(function(d) {
+                labels: dataE.map(function(d) {
                     return d[0];
                 }),
                 datasets: [{
                     label: 'Jumlah Jawaban',
-                    data: data6.map(function(d) {
+                    data: dataE.map(function(d) {
                         return d[1];
                     }),
                     backgroundColor: [
@@ -487,18 +401,18 @@ while ($row = mysqli_fetch_assoc($query7)) {
     </script>
     <script>
         // Membuat variabel data yang berisi data dari PHP
-        var data7 = <?php echo json_encode($data7); ?>;
+        var dataF = <?php echo json_encode($dataF); ?>;
         // Membuat chart menggunakan Chart.js
-        var ctx = document.getElementById('myChart7').getContext('2d');
+        var ctx = document.getElementById('myChart5').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: data7.map(function(d) {
+                labels: dataF.map(function(d) {
                     return d[0];
                 }),
                 datasets: [{
                     label: 'Jumlah Jawaban',
-                    data: data7.map(function(d) {
+                    data: dataF.map(function(d) {
                         return d[1];
                     }),
                     backgroundColor: [
@@ -527,6 +441,94 @@ while ($row = mysqli_fetch_assoc($query7)) {
             }
         });
     </script>
+
+    <script>
+        // Membuat variabel data yang berisi data dari PHP
+        var dataB = <?php echo json_encode($dataB); ?>;
+        // Membuat chart menggunakan Chart.js
+        var ctx = document.getElementById('myChart6').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: dataB.map(function(d) {
+                    return d[0];
+                }),
+                datasets: [{
+                    label: 'Jumlah Jawaban',
+                    data: dataB.map(function(d) {
+                        return d[1];
+                    }),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        // Membuat variabel data yang berisi data dari PHP
+        var dataA = <?php echo json_encode($dataA); ?>;
+        // Membuat chart menggunakan Chart.js
+        var ctx = document.getElementById('myChart7').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: dataA.map(function(d) {
+                    return d[0];
+                }),
+                datasets: [{
+                    label: 'Jumlah Jawaban',
+                    data: dataA.map(function(d) {
+                        return d[1];
+                    }),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+
+
 
 </body>
 
