@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+section
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+section .login
+{
+    position: absolute;
+    width: 400px;
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+section .login .content
+{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;   
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+section .login .content h2
+{
+    color: #ef8f00;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+section .login .content .form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section .login .content .form .inputBx
+{
+    position: relative;
+    width: 100%;
+}
+section .login .content .form .inputBx input
+{
+    position: relative;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px ;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+section .login .content .form .inputBx i
+{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    font-size: 1em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.login .content .form .inputBx input:focus ~ i ,
+.login .content .form .inputBx input:valid~ i
+{
+    transform: translateY(-11.5px);
+    font-size: 0.8em;
+    color : #ef8f00;
+}

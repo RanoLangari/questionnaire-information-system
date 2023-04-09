@@ -1,0 +1,15 @@
+{
+  "require": {
+    "monolog/monolog": "1.0",
+    "phpoffice/phpspreadsheet": "^1.28",
+    "mpdf/mpdf": "^8.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  }
+}

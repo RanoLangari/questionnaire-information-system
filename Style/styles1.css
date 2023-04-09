@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+p {
+  font-weight: 300;
+  color: rgb(242, 173, 0);
+}
+body {
+  min-height: 1000px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(32, 41, 80, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2 {
+  font-size: 3.5em;
+  color: blanchedalmond;
+}
+.banner .content h3 {
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+}
+.banner .content p {
+  font-size: 1em;
+  color: blanchedalmond;
+}
+.btn {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background: rgb(242, 173, 0);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btn:hover {
+  letter-spacing: 6px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  color: rgb(255, 185, 8);
+  font-weight: 700;
+  font-size: 1.75em;
+  text-decoration: none;
+}
+.sticky .logo {
+  color: #111;
+}
+header .logo span {
+  color: #fff;
+}
+.sticky .logo span {
+  color: rgb(255, 185, 8);
+}
+header .navigation {
+  position: relative;
+  display: flex;
+}
+header .navigation li {
+  list-style: none;
+  margin-right: 35px;
+  margin-top: 5px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+.sticky .navigation li a {
+  color: #111;
+}
+
+header .navigation li a:hover {
+  color: rgb(242, 173, 0);
+}
+header .button {
+  background-color: rgb(242, 173, 0);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: scale 0, 2 ease;
+}
+.sticky .button {
+  color: #111;
+}
+.button:hover {
+  border: 1px solid rgb(220, 228, 220);
+  scale: 1.05;
+}
+.sticky .button:hover {
+  border: #111;
+}
+.button:active {
+  scale: 0.95;
+}
+section {
+  padding: 100px;
+}
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .co150 {
+  position: relative;
+  width: 48%;
+}
+.titleText {
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+.titleText span {
+  color: rgb(255, 185, 8);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.row .co150 .imgBx {
+  position: relative;
+  width: 100%;
+  /*min-height: 300px;*/
+  height: 107%;
+}
+.row .co150 .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

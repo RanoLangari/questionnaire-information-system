@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Tracer Study | Undana</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="Tracer Study Alumni Universitas Nusa Cendana" name="description" />
+	<meta content="TIM IT BAAKPSI UNDANA" name="author" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+		type="text/css" />
+	<link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="./assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components"
+		type="text/css" />
+	<link href="./assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css"
+		id="style_color" />
+	<link href="./assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet"
+		type="text/css" />
+
+	<link rel="shortcut icon" href="favicon.ico" />
+
+	<style>
+		select {
+			width: 300px;
+		}
+	</style>
+
+</head>
+
+<body
+	class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-closed">
+	<div class="page-wrapper">
+
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<div class="page-logo">
+					<a href="index.php">
+						<img src="./assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
+					<div class="menu-toggler sidebar-toggler">
+						<span></span>
+					</div>
+				</div>
+				<div class="hor-menu  hor-menu-light hidden-sm hidden-xs">
+					<ul class="nav navbar-nav">
+						<!-- DOC: Remove data-hover="megamenu-dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
+						<li>
+							<a href="#">
+								SISTEM INFORMASI TRACER STUDY ALUMNI UNIVERSITAS NUSA CENDANA
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="menu-toggler responsive-toggler" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+
+						<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+							&nbsp;
+						</li>
+
+						<li class="dropdown dropdown-user">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+								data-close-others="true">
+								<img alt="" class="img-circle" src="./config/image_avatar.php?file=1506080053.jpg" />
+								<span class="username username-hide-on-mobile"> HAWU YOGIA PRADANA ULY </span>
+
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="media.php?module=user&act=default">
+										<i class="icon-user"></i> Profilku </a>
+								</li>
+								<li>
+									<a href="logout.php">
+										<i class="icon-key"></i> Keluar </a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="clearfix">
+	</div>
+	<div class="page-container">
+
+		<div class="page-content-wrapper">
+			<div class="page-content">
+
+				<div class="page-bar">
+					<ul class="page-breadcrumb">
+						<li>
+							<a href="media.php?module=home&act=default" class="btn default">
+								<span class="glyphicon glyphicon-home"> </span> Dashboard
+							</a>
+						</li>
+					</ul>
+					<div class="page-toolbar">
+						<i class="icon-calendar"></i>&nbsp;
+						Senin, 20 Maret 2023 | 23:41:27 WITA</p>
+					</div>
+				</div>
+				<h1 class="page-title">
+					<font color="purple"><b> Kuesioner Alumni </b></font><small>
+						<font color="blue">Universitas Nusa Cendana</font>
+					</small>
+				</h1>
+				<!-- Step  -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="portlet box green">
+							<div class="portlet-title">
+								<div class="caption">
+									<i class="glyphicon glyphicon-question-sign"></i> FORM KUESIONER TRACER STUDY ALUMNI
+								</div>
+							</div>
+							<div class="portlet-body">
+								<form
+									action="modul/mod_formQuisioner/aksi_formQuisioner.php?module=formQuisioner&act=inputForm"
+									class="form-horizontal" method="post" enctype="multipart/form-data"
+									id="form_sample_31" />
+								<div class="form-body">
+									<div class="alert alert-danger display-hide">
+										<button class="close" data-close="alert"></button>
+										Maaf...Ada kesalahan. Silahkan memasukan data dengan benar pada bagian yang
+										wajib diisi (berwarna merah).
+									</div>
+
+									<div class="portlet-body">
+										<table class="table table-bordered table-striped table-condensed flip-content">
+											<thead class="flip-content">
+												<tr>
+													<th width="5%"> No </th>
+													<th width="40%"> Pertanyaan </th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<img alt="" src="./img/1.png" />
+													</td>
+													<td>
+														<font color="blue"><i> Sebutkan sumberdana dalam pembiayaan
+																kuliah? (bukan ketika Studi Lanjut)</font>
+														<font color="red">[ f12 ]</font></i>
+														<hr>
+														<div class="form-group">
+															<div class="col-md-9">
+																<div class="mt-radio-list"
+																	data-error-container="#form_2_f1201_error">
+
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="1" checked> [1] Biaya Sendiri / Keluarga
+																	<br>
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2"> [2] Beasiswa ADIK
+																	<br>
+
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="3"> [3] Beasiswa BIDIKMISI
+
+																	<br>
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="4"> [4] Beasiswa PPA
+																	<br>
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="5"> [5] Beasiswa AFIRMASI
+																	<br>
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="6"> [6] Beasiswa Perusahaan/Swasta
+																	<br>
+																	<input type="radio" name="f1201" id="f12"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="7"> [7] Lainnya, tuliskan:
+																</div>
+																<div class="col-md-4">
+																	<input type="text" name="f1202" class="form-control"
+																		placeholder="" value="">
+																	<span class="help-block">
+																		Jika memilih [7] Lainnya, silahkan ketik di
+																		kotak ini
+																	</span>
+																</div> 4
+
+															</div>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td><img alt="" src="./img/2.png" /></td>
+													<td>
+														<div class="col-md-9">
+															<div class="form-group">
+																<div class="mt-radio-list" data-error-container="#">
+																	<font color="blue"><i> Jelaskan status Anda saat
+																			ini?</font>
+																	<font color="red"> [ f8 ]</font></i>
+																	<hr>
+																	<input type="radio" name="f8" id="f8" value="1"
+																		style="height:20px; width:20px; vertical-align: middle;">
+																	[1] Bekerja (full time/part time)
+																	<br>
+																	<input type="radio" name="f8" id="f8"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="3"> [3] Wiraswasta
+																	<br>
+																	<input type="radio" name="f8" id="f8"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="4" checked> [4] Melanjutkan Pendidikan
+																	<br>
+																	<input type="radio" name="f8" id="f8"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="5"> [5] Tidak Kerja tetapi sedang mencari
+																	kerja
+
+																	<br>
+																	<input type="radio" name="f8" id="f8"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2"> [2] Belum memungkinkan bekerja
+																</div>
+																<div id="error1"> </div>
+															</div>
+														</div>
+													</td>
+												</tr>
+
+												<tr>
+													<td><img alt="" src="./img/3.png" /></td>
+													<td>
+														<div class="col-md-9">
+															<div class="form-group">
+																<div class="mt-radio-list" data-error-container="#">
+																	<font color="blue"><i> Apakah anda telah mendapatkan
+																			pekerjaan <= 6 bulan / termasuk bekerja
+																				sebelum lulus ?</font> <font
+																				color="red"> [ f504 ]</font></i>
+																	<hr>
+																	<input type="radio" name="f504" id="f504"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="1"> [1] Ya <i>
+																		<font color="red"> [ f5-04 ]</font>
+																	</i><br>
+																	Dalam berapa bulan anda mendapatkan pekerjaan ?
+																	<input type="number" name="f502" value="0"> <i>
+																		<font color="red"> [ f5-02 ]</font>
+																	</i>
+																	<br>
+
+																	<input type="radio" name="f504" id="f504"
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2" checked> [2] Tidak <i>
+																		<font color="red"> [ f5-04 ]</font>
+																	</i><br>
+																	Dalam berapa bulan anda mendapatkan pekerjaan ?
+																	<input type="number" class="" name="f506" value="0">
+																	<i>
+																		<font color="red"> [ f5-06 ]</font>
+																	</i>
+																	<!--<hr>
+																Berapa rata-rata pendapatan anda per bulan ? (take home pay)? <input type="number" name="f505"  value="" > <i><font color="red"> [ f5-05 ]</font></i> nnti jadi F505-->
+																</div>
+																<div id="error1"> </div>
+															</div>
+														</div>
+													</td>
+												</tr>
+
+												<!--start update terbaru -->
+												<tr>
+													<td>
+														<img alt="" src="./img/4.png" />
+													</td>
+													<td class="numeric" colspan='2'>
+														<font color="blue"><i> Kira-kira berapa rincian pendapatan anda
+																setiap bulannya? <font color="red">[ f13 ]</font></i>
+														</font>
+														<div class="form-group">
+
+															<div class="col-md-9">
+																<div class="form-group">
+																	<b>Dari pekerjaan utama, Rp.</b><i>
+																		<font color="red"> [ f13-01 ]</font>
+																	</i><br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		value="1000000"
+																		style="height:20px; width:20px; vertical-align: middle;">
+																	Dibawah 1 Juta
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="1500000"> 1 - 1.5 Juta
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2000000"> 1.6 - 2 Juta
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2500000"> 2.1 - 2.5 Juta
+
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="3500000"> 2.6 - 3.5 Juta
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="5000000"> 3.6 - 5 juta
+																	<br>
+																	<input type="radio" name="f1301" id="f1301" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="6000000"> Diatas 5 Juta
+
+
+																</div>
+															</div>
+
+
+															<div class="col-md-9">
+																<div class="form-group">
+																	<b>Dari Lembur dan Tips, Rp.</b><i>
+																		<font color="red"> [ f13-02 ]</font>
+																	</i><br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		value="1000000"
+																		style="height:20px; width:20px; vertical-align: middle;">
+																	Dibawah 1 Juta
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="1500000"> 1 - 1.5 Juta
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2000000"> 1.6 - 2 Juta
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2500000"> 2.1 - 2.5 Juta
+
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="3500000"> 2.6 - 3.5 Juta
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="5000000"> 3.6 - 5 juta
+																	<br>
+																	<input type="radio" name="f1302" id="f1302" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="6000000"> Diatas 5 Juta
+
+
+																</div>
+															</div>
+
+															<div class="col-md-9">
+																<div class="form-group">
+																	<b>Dari Pekerjaan Lainnya, Rp.</b><i>
+																		<font color="red"> [ f13-03 ]</font>
+																	</i><br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		value="1000000"
+																		style="height:20px; width:20px; vertical-align: middle;">
+																	Dibawah 1 Juta
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="1500000"> 1 - 1.5 Juta
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2000000"> 1.6 - 2 Juta
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="2500000"> 2.1 - 2.5 Juta
+
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="3500000"> 2.6 - 3.5 Juta
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="5000000"> 3.6 - 5 juta
+																	<br>
+																	<input type="radio" name="f1303" id="f1303" class=""
+																		style="height:20px; width:20px; vertical-align: middle;"
+																		value="6000000"> Diatas 5 Juta
+
+
+																</div>
+															</div>
+
+
+
+
+
+
+															<!--<div class="col-md-7">                                                       
+															<b>Dari pekerjaan utama, Rp.</b><i><font color="red"> [ f13-01 ]</font></i>
+															<input type="number" name="f1301" class="form-control" id="" placeholder="" value="" />
+															<span class="help-block">
+																(ketik angka saja tanpa tanda Titik atau Koma)
+															</span>
+														</div>
+														
+														<div class="col-md-7">                                                       
+															<b>Dari Lembur dan Tips, Rp.</b><i><font color="red"> [ f13-02 ]</font></i>
+															<input type="number" name="f1302" class="form-control" id="" placeholder="" value="" />
+															<span class="help-block">
+																(ketik angka saja tanpa tanda Titik atau Koma)
+															</span>														
+														</div>
+														
+														<div class="col-md-7">                                                       
+															<b>Dari Pekerjaan Lainnya, Rp.</b><i><font color="red"> [ f13-03 ]</font></i>
+															<input type="number" name="f1303" class="form-control" id="" placeholder="" value="" />
+															<span class="help-block">
+																(ketik angka saja tanpa tanda Titik atau Koma)
+															</span>
+														</div>
+														-->
+
+
+														</div>
+									</div>
+									</td>
+									</tr>
+
+									<tr>
+										<td><img alt="" src="./img/5.png" /></td>
+										<td class="numeric" colspan="">
+											<font color="blue"><i> Apa jenis perusahaan/instansi/institusi tempat anda
+													bekerja sekarang?</font>
+											<font color="red">[ f11 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-12">
+													<div class="mt-radio-list" data-error-container="#form_3_f11_error">
+														<input type="radio" name="f1101" value="1"
+															style="height:20px; width:20px; vertical-align: middle;">
+														[1] Instansi pemerintah (termasuk BUMN)
+														<br>
+														<input type="radio" name="f1101" value="2"
+															style="height:20px; width:20px; vertical-align: middle;">
+														[2] Organisasi non-profit/Lembaga Swadaya Masyarakat
+														<br>
+														<input type="radio" name="f1101" value="3"
+															style="height:20px; width:20px; vertical-align: middle;">
+														[3] Perusahaan swasta
+														<br>
+														<input type="radio" name="f1101" value="4"
+															style="height:20px; width:20px; vertical-align: middle;">
+														[4] Wiraswasta/perusahaan sendiri
+
+														<br>
+														<input type="radio" name="f1101" value="5"
+															style="height:20px; width:20px; vertical-align: middle;">
+														[5] Lainnya, tuliskan:
+														<div id="form_3_f11_error"> </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-4">
+													<input type="text" name="f1102" id="f1102" class="form-control"
+														placeholder="" value="">
+													<span class="help-block">
+														Jika memilih Lainnya, silahkan ketik di kotak ini
+													</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td><img alt="" src="./img/6.png" /></td>
+										<td class="numeric">
+											<font color="blue"><i> Dimana lokasi tempat Anda bekerja?</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-4">
+													Nama Instansi/Institusi/Perusahaan Tempat Kerja
+													<input type="text" name="tempat_kerja" class="form-control" id=""
+														placeholder="" value="" />
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-4">
+													Bidang Pekerjaan
+													<input type="text" name="bidang_kerja" class="form-control" id=""
+														placeholder="" value="" />
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-4">
+													Level Tempat Kerja
+													<select name="level_tmpt_kerja" id="level_tmpt_kerja"
+														class="form-control" required>
+														<option value='L'> Local</option>
+														<option value='N'> Nasional</option>
+														<option value='I'> Internasional</option>
+														<option value='' selected>--Pilih--</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group" id="negara_kerja">
+												<div class="col-md-4">
+													Negara
+													<input type="text" name="negara_kerja" id="" class="form-control"
+														id="" placeholder="" value="" />
+												</div>
+											</div>
+
+											<div class="form-group" id="local_kerja">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="control-label col-md-3">Provinsi
+															<span class="required"> * </span>
+														</label>
+
+														<div class="col-md-9">
+															<select class="form-control" name="prov" id="prov">
+																<option value="">Pilih...</option>
+																<option value='010000'>Prop. D.K.I. Jakarta </option>
+																<option value='020000'>Prop. Jawa Barat </option>
+																<option value='030000'>Prop. Jawa Tengah </option>
+																<option value='040000'>Prop. D.I. Yogyakarta </option>
+																<option value='050000'>Prop. Jawa Timur </option>
+																<option value='060000'>Prop. Aceh </option>
+																<option value='070000'>Prop. Sumatera Utara </option>
+																<option value='080000'>Prop. Sumatera Barat </option>
+																<option value='090000'>Prop. Riau </option>
+																<option value='100000'>Prop. Jambi </option>
+																<option value='110000'>Prop. Sumatera Selatan </option>
+																<option value='120000'>Prop. Lampung </option>
+																<option value='130000'>Prop. Kalimantan Barat </option>
+																<option value='140000'>Prop. Kalimantan Tengah </option>
+																<option value='150000'>Prop. Kalimantan Selatan
+																</option>
+																<option value='160000'>Prop. Kalimantan Timur </option>
+																<option value='170000'>Prop. Sulawesi Utara </option>
+																<option value='180000'>Prop. Sulawesi Tengah </option>
+																<option value='190000'>Prop. Sulawesi Selatan </option>
+																<option value='200000'>Prop. Sulawesi Tenggara </option>
+																<option value='210000'>Prop. Maluku </option>
+																<option value='220000'>Prop. Bali </option>
+																<option value='230000'>Prop. Nusa Tenggara Barat
+																</option>
+																<option value='240000'>Prop. Nusa Tenggara Timur
+																</option>
+																<option value='250000'>Prop. Papua </option>
+																<option value='260000'>Prop. Bengkulu </option>
+																<option value='270000'>Prop. Maluku Utara </option>
+																<option value='280000'>Prop. Banten </option>
+																<option value='290000'>Prop. Bangka Belitung </option>
+																<option value='300000'>Prop. Gorontalo </option>
+																<option value='310000'>Prop. Kepulauan Riau </option>
+																<option value='320000'>Prop. Papua Barat </option>
+																<option value='330000'>Prop. Sulawesi Barat </option>
+																<option value='340000'>Prop. Kalimantan Utara</option>
+															</select>
+															<i>
+																<font color="red"> [ f5a1 ]</font>
+															</i>
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label class="control-label col-md-3">Kabupaten
+															<span class="required"> *</span>
+														</label>
+														<div class="col-md-9">
+															<select class="form-control" name="kab" id="kab">
+																<option value="">Pilih...</option>
+															</select>
+															<i>
+																<font color="red"> [ f5a2 ]</font>
+															</i>
+														</div>
+													</div>
+													<script src="./assets/global/plugins/jquery.min.js"
+														type="text/javascript"></script>
+													<script type="text/javascript">
+														$(document).ready(function () {
+															$('#prov').on('change', function () {
+																var provID = $('#prov').val();
+																if (provID) {
+																	$.ajax({
+																		type: 'POST',
+																		url: './modul/mod_kuisoner/kab_ajax.php',
+																		data: 'prov_id=' + provID,
+																		success: function (html) {
+																			$('#kab').html(html);
+																		}
+																	});
+																}
+															});
+
+															$('#kab').on('change', function () {
+																var kabID = $('#kab').val();
+																if (kabID) {
+																	$.ajax({
+																		type: 'POST',
+																		url: './modul/mod_kuisoner/kec_ajax.php',
+																		data: 'kab_id=' + kabID,
+																		success: function (html) {
+																			$('#kec').html(html);
+																		}
+																	});
+																}
+															});
+														});
+													</script>
+												</div>
+											</div>
+											<div class="form-group" id="">
+												<div class="col-md-4">
+													<font color="blue"><i> Apa jabatan/posisi dalam pekerjaan Anda?
+													</font>
+													<font color="red">[ f5d ]</font></i>
+													<select name="f5d" id="f5d" class="form-control">
+														<option value="1">[ 1 ] Founder
+														<option value="2">[ 2 ] Co-Founder
+														<option value="3">[ 3 ] Staff
+														<option value="4">[ 4 ] Freelance/Kerja Lepas
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-4">
+													Tanggal Mulai Bekerja
+													<input type="date" name="tgl_mulai_kerja" class="form-control" id=""
+														placeholder="" value="" />
+												</div>
+											</div>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td><img alt="" src="./img/7.png" /></td>
+										<td>
+											<font color="blue"><i> Kapan anda mulai mencari pekerjaan? Mohon pekerjaan
+													sambilan tidak dimasukkan </font>
+											<font color="red">[ f3 ]</font></i>
+											<hr>
+											<div class="col-md-12">
+												<div class="form-group">
+													<div class="mt-radio-list"
+														data-error-container="#form_2_f301_error">
+														<input type="radio" name="f301"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1"> [1] Kira-kira
+														<br>
+														<br>
+														<input type="text" name="f302" id="f302" class="" placeholder=""
+															value="0">
+														<span class="help-block"> <b>bulan sebelum lulus </b></span>
+
+														<input type="radio" name="f301"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2"> [2] Kira-kira
+														<br>
+														<br>
+														<input type="text" name="f303" id="f303" class="" placeholder=""
+															value="0">
+														<span class="help-block"> <b>bulan setelah lulus </b></span>
+
+
+														<input type="radio" name="f301"
+															style="height:20px; width:20px; vertical-align: middle;"
+															class="" value="3" checked> [3] Saya tidak mencari kerja
+														(Langsung ke pertanyaan f8)
+
+
+													</div>
+													<div id="form_2_f301_error"> </div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/8.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Seberapa erat hubungan antara bidang studi dengan
+													pekerjaan anda?</font>
+											<font color="red">[ f14 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-9">
+													<div class="mt-radio-list" data-error-container="#form_3_f14_error">
+														<input type="radio" name="f14"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1"> [1] Sangat Erat
+														<br>
+														<input type="radio" name="f14"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2"> [2] Erat
+														<br>
+														<input type="radio" name="f14"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3"> [3] Cukup Erat
+														<br>
+														<input type="radio" name="f14"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4"> [4] Kurang Erat
+
+														<br>
+														<input type="radio" name="f14"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5"> [5] Tidak Sama Sekali
+														<div id="form_3_f14"> </div>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/9.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Tingkat pendidikan apa yang paling tepat/sesuai untuk
+													pekerjaan anda saat ini?</font>
+											<font color="red">[ f15 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-9">
+													<div class="mt-radio-list" data-error-container="#form_4_f15_error">
+														<input type="radio" name="f15"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1"> [1] Setingkat Lebih Tinggi
+														<br>
+														<input type="radio" name="f15"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2"> [2] Tingkat yang Sama
+														<br>
+														<input type="radio" name="f15"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3"> [3] Setingkat Lebih Rendah
+														<br>
+														<input type="radio" name="f15"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4"> [4] Tidak Perlu Pendidikan Tinggi
+														<div id="form_4_f15_error"> </div>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td><img alt="" src="./img/10.png" /></td>
+										<td>
+											<font color="blue"><i> Bagaimana anda mencari pekerjaan tersebut? Jawaban
+													bisa lebih dari satu</font>
+											<font color="red">[ f4 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-12">
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f401" /> [1] Melalui iklan di koran/majalah,
+													brosur
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f402" /> [1] Melamar ke perusahaan tanpa
+													mengetahui lowongan yang ada
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f403" /> [1] Pergi ke bursa/pameran kerja
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f404" /> [1] Mencari lewat internet/iklan
+													online/milis
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f405" /> [1] Dihubungi oleh perusahaan
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f406" value="1" name="f406" /> [1] Menghubungi
+													Kemenakertrans
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f407" value="1" name="f407" /> [1] Menghubungi agen tenaga
+													kerja komersial/swasta
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f408" value="1" name="f408" /> [1] Memeroleh informasi dari
+													pusat/kantor pengembangan karir fakultas/universitas
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f409" value="1" name="f409" /> [1] Menghubungi kantor
+													kemahasiswaan/hubungan alumni
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f410" value="1" name="f410" /> [1] Membangun jejaring
+													(network) sejak masih kuliah
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f411" value="1" name="f411" /> [1] Melalui relasi (misalnya
+													dosen, orang tua, saudara, teman, dll.)
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f412" value="1" name="f412" /> [1] Membangun bisnis sendiri
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f413" value="1" name="f413" /> [1] Melalui penempatan kerja
+													atau magang
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f414" value="1" name="f414" /> [1] Bekerja di tempat yang
+													sama dengan tempat kerja semasa kuliah
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														id="f415" value="1" name="f415" /> [1] Lainnya:
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-3">
+													<input type="text" name="f416" id="f416" class="form-control"
+														placeholder="" value="">
+													<span class="help-block">
+														Jika memilih Lainnya, silahkan ketik di kotak ini
+													</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+
+									<tr>
+										<td>
+											<img alt="" src="./img/11.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Berapa banyak perusahaan/instansi/institusi yang
+													sudah anda lamar (lewat surat atau e-mail) sebelum anda memeroleh
+													pekerjaan pertama? <font color="red">[ f6 ]</font></i>
+												<hr>
+												<div class="form-group">
+													<div class="col-md-4">
+														<input type="text" name="f6" class="form-control" placeholder=""
+															value="0" />
+														<span class="help-block">
+															perusahaan/instansi/institusi
+														</span>
+													</div>
+												</div>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/12.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Berapa banyak perusahaan/instansi/institusi yang
+													merespons lamaran anda?</font>
+											<font color="red">[ f7 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-4">
+													<input type="text" name="f7" class="form-control" placeholder=""
+														value="0" />
+													<span class="help-block">
+														perusahaan/instansi/institusi
+													</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/13.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Berapa banyak perusahaan/instansi/institusi yang
+													mengundang anda untuk wawancara? <font color="red">[ f7a ]</font>
+												</i>
+												<hr>
+												<div class="form-group">
+													<div class="col-md-4">
+														<input type="text" name="f7a" class="form-control"
+															placeholder="" value="0" />
+														<span class="help-block">
+															perusahaan/instansi/institusi
+														</span>
+													</div>
+												</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/14.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Apakah anda aktif mencari pekerjaan dalam 4 minggu
+													terakhir? Pilihlah Satu Jawaban. KEMUDIAN LANJUT KE f17</font>
+											<font color="red">[ f10 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-12">
+													<div class="mt-radio-list" data-error-container="#form_3_f10_error">
+														<input type="radio" name="f1001"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1"> [1] Tidak
+														<br>
+														<input type="radio" name="f1001"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2"> [2] Tidak, tapi saya sedang menunggu hasil
+														lamaran kerja
+														<br>
+														<input type="radio" name="f1001"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3"> [3] Ya, saya akan mulai bekerja dalam 2 minggu ke
+														depan
+														<br>
+														<input type="radio" name="f1001"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4"> [4] Ya, tapi saya belum pasti akan bekerja dalam
+														2 minggu ke depan
+
+														<br>
+														<input type="radio" name="f1001"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5"> [5] Lainnya
+													</div>
+													<div id="form_3_f10_error"> </div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-3">
+													<input type="text" name="f1002" id="1002" class="form-control"
+														placeholder="" value="">
+													<span class="help-block">
+														Jika memilih Lainnya, silahkan ketik di kotak ini
+													</span>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/15.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Jika menurut anda pekerjaan anda saat ini tidak
+													sesuai dengan <b>Bidang Ilmu</b> Anda, mengapa anda mengambilnya?
+													Jawaban anda mengambilnya? Jawaban bisa lebih dari satu :</font>
+											<font color="red">[ f16 ]</font></i>
+											<hr>
+											<div class="form-group">
+												<div class="col-md-12">
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" name="f1601" /> [1] Pertanyaan tidak sesuai; pekerjaan
+													saya sekarang sudah sesuai dengan pendidikan saya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2" name="f1602" /> [2] Saya belum mendapatkan pekerjaan
+													yang lebih sesuai.
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3" name="f1603" /> [3] Di pekerjaan ini saya memeroleh
+													prospek karir yang baik.
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4" name="f1604" /> [4] Saya lebih suka bekerja di area
+													pekerjaan yang tidak ada hubungannya dengan pendidikan saya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5" name="f1605" /> [5] Saya dipromosikan ke posisi yang
+													kurang berhubungan dengan pendidikan saya dibanding posisi
+													sebelumnya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="6" name="f1606" /> [6] Saya dapat memeroleh pendapatan
+													yang lebih tinggi di pekerjaan ini.
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="7" name="f1607" /> [7] Pekerjaan saya saat ini lebih
+													aman/terjamin/secure
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="8" name="f1608" /> [8] Pekerjaan saya saat ini lebih
+													menarik
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="9" name="f1609" /> [9] Pekerjaan saya saat ini lebih
+													memungkinkan saya mengambil pekerjaan tambahan/jadwal yang
+													fleksibel, dll.
+
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="10" name="f1610" /> [10] Pekerjaan saya saat ini
+													lokasinya lebih dekat dari rumah saya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="11" name="f1611" /> [11] Pekerjaan saya saat ini dapat
+													lebih menjamin kebutuhan keluarga saya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="12" name="f1612" /> [12] Pada awal meniti karir ini, saya
+													harus menerima pekerjaan yang tidak berhubungan dengan pendidikan
+													saya.
+													<br>
+													<input type="checkbox" class="require-one"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="13" name="f1613" /> [13] Lainnya:
+
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-3">
+													<div class="input-group">
+														<input type="text" name="f1614" id="f1614" class="form-control"
+															placeholder="" value="">
+														<span class="help-block">
+															Jika memilih Lainnya, silahkan ketik di kotak ini
+														</span>
+													</div>
+												</div>
+											</div>
+
+										</td>
+									</tr>
+
+									<!--
+											<tr>
+												<td><img alt="" src="./img/5.png" /></td>
+												<td>
+													<font color="blue"><i> Apa jenis perusahaan/instansi/institusi tempat anda bekerja sekarang?</font> <font color="red">[ f5b ]</font></i>
+													<hr>
+													<div class="form-group">
+														<div class="col-md-4">  
+															<input type="text" name="f5b" id="f5b" class="form-control" placeholder="" value=""> 
+														</div>
+													</div>													
+												</td>
+											</tr>
+											 
+											 
+											<tr>
+												<td><img alt="" src="./img/6.png" /> </td>
+												<td>
+													<font color="blue"><i> 	Bila berwiraswasta, apa posisi/jabatan Anda saat ini ? (Apabila F8 menjawab [3] Wiraswasta)</font> <font color="red">[ f5c ]</font></i>
+													<hr>
+													<div class="form-group">
+														<div class="col-md-4">
+															<select name="f5c" id="f5c" class="form-control">
+																															</select>
+														</div>
+													</div>
+												</td>
+											</tr>-->
+
+									<tr>
+										<td><img alt="" src="./img/16.png" /> </td>
+										<td>
+											<font color="blue"><i> Bila berwiraswasta,Usaha apa yang Anda jalankan saat
+													ini? (Apabila F8 menjawab [3] Wiraswasta)</font>
+											<font color="red">[ f5c ]</font></i>
+											<div class="form-group" id="">
+												<div class="col-md-4">
+													<input type="text" name="usaha_wiraswasta" id="usaha_wiraswasta"
+														class="form-control" id="" placeholder="" value="" />
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/17.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Pertanyaan studi lanjut (Apabila F8 menjawab [4]
+													Melanjutkan Pendidikan)</font>
+											<font color="red">[ f18a ]</font></i>
+											<hr>
+											Sumber Biaya :
+											<div class="form-group">
+												<div class="col-md-4">
+													<select name="f18a" id="f18a" class="form-control">
+														<option value="1" selected>[ 1 ] Biaya Sendiri
+														<option value="2">[ 2 ] Beasiswa
+													</select>
+
+												</div>
+											</div>
+
+											Perguruan Tinggi :
+											<div class="form-group">
+												<div class="col-md-4">
+													<input type="text" name="f18b" id="f18b"
+														value="Universitas Atma Jaya Yogyakarta" class="form-control">
+												</div>
+											</div>
+
+											Program Studi :
+											<div class="form-group">
+												<div class="col-md-4">
+													<input type="text" name="f18c" class="form-control"
+														value="Informatika">
+												</div>
+											</div>
+
+											Tanggal Masuk :
+											<div class="form-group">
+												<div class="col-md-4">
+													<input type="date" name="f18d" class="form-control"
+														value="2020-08-24">
+												</div>
+											</div>
+
+											Alasan Melanjutkan Studi?
+											<div class="form-group">
+												<div class="col-md-4">
+													<textarea name="alasan_lanjut_studi"
+														class="form-control">ingin memperdalam Ilmu yang dididapati dan ingin menjadi seorang Dosen</textarea>
+												</div>
+											</div>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/18.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Bila Belum Mendapatkan Pekerjaan/tidak
+													berwirausaha/tidak melanjutkan studi, Apa kendalanya? (Apabila F8
+													menjawab[2] belum bekerja)</font>
+											<font color="red">[ f18a ]</font></i>
+											<div class="form-group">
+												<div class="col-md-4">
+													<textarea name="alasan_tidak_kerja_tudi"
+														class="form-control"></textarea>
+												</div>
+											</div>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td><img alt="" src="./img/19s.png" /></td>
+										<td>
+											<font color="blue"><i> Menurut anda seberapa besar penekanan pada metode
+													pembelajaran di bawah ini dilaksanakan di program studi anda?
+											</font>
+											<font color="red">[ f2 ]</font></i>
+											<hr>
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Perkuliahan
+												</label>
+												<br>
+												<div class="mt-radio-list" data-error-container="#form_3_f21_error">
+
+													<input type="radio" name="f21"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" checked> [1] Sangat Besar
+													<br>
+													<input type="radio" name="f21"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2"> [2] Besar
+													<br>
+													<input type="radio" name="f21"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f21"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f21"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+
+													<div id="form_3_f21_error"> </div>
+												</div>
+
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Demonstrasi
+												</label>
+												<br>
+												<div class="mt-radio-list" data-error-container="#form_3_f22_error">
+
+
+													<input type="radio" name="f22"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" checked> [1] Sangat Besar
+													<br>
+													<input type="radio" name="f22"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2"> [2] Besar
+													<br>
+													<input type="radio" name="f22"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f22"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f22"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f22_error"> </div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Partisipasi dalam proyek riset
+												</label>
+												<br>
+												<div class="mt-radio-list" data-error-container="#form_3_f23_error">
+
+													<input type="radio" name="f23"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" checked> [1] Sangat Besar
+													<br>
+													<input type="radio" name="f23"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2"> [2] Besar
+													<br>
+													<input type="radio" name="f23"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f23"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f23"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f23"> </div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Magang
+												</label>
+
+												<div class="mt-radio-list" data-error-container="#form_3_f24_error">
+
+													<input type="radio" name="f24"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1"> [1] Sangat Besar
+													<br>
+
+													<input type="radio" name="f24"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2" checked> [2] Besar
+													<br>
+													<input type="radio" name="f24"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f24"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f24"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f24"> </div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Praktikum
+												</label>
+												<div class="mt-radio-list" data-error-container="#form_3_f25_error">
+													<br>
+
+													<input type="radio" name="f25"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" checked> [1] Sangat Besar
+													<br>
+													<input type="radio" name="f25"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2"> [2] Besar
+													<br>
+													<input type="radio" name="f25"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f25"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f25"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f25"> </div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Kerja Lapangan
+												</label>
+												<div class="mt-radio-list" data-error-container="#form_3_f26_error">
+													<input type="radio" name="f26"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1"> [1] Sangat Besar
+													<br>
+
+													<input type="radio" name="f26"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2" checked> [2] Besar
+													<br>
+													<input type="radio" name="f26"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f26"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f26"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f26_error"> </div>
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<label
+													class="btn btn-transparent blue btn-outline btn-square btn-sm active">
+													Diskusi
+												</label>
+												<div class="mt-radio-list" data-error-container="#form_3_f27_error">
+
+													<input type="radio" name="f27"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="1" checked> [1] Sangat Besar
+													<br>
+													<input type="radio" name="f27"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="2"> [2] Besar
+													<br>
+													<input type="radio" name="f27"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="3"> [3] Cukup Besar
+													<br>
+													<input type="radio" name="f27"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="4"> [4] Kurang
+
+													<br>
+													<input type="radio" name="f27"
+														style="height:20px; width:20px; vertical-align: middle;"
+														value="5"> [5] Tidak Sama Sekali
+													<div id="form_3_f27"> </div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<img alt="" src="./img/19.png" />
+										</td>
+										<td>
+											<font color="blue"><i> Pada saat lulus, pada tingkat mana kompetensi di
+													bawah ini anda kuasai? (A)</font><br>
+											<font color="red">[ f17 ]</font></i>
+											<hr>
+											<table class='table'>
+												<tr>
+													<td colspan="2"><b>Sangat Rendah</b></td>
+													<td></td>
+													<td colspan="2"><b>Sangat Tinggi</b></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<h4><b>1</b></h4>
+													</td>
+													<td>
+														<h4><b>2</b></h4>
+													</td>
+													<td>
+														<h4><b>3</b></h4>
+													</td>
+													<td>
+														<h4><b>4</b></h4>
+													</td>
+													<td>
+														<h4><b>5</b></h4>
+													</td>
+													<td></td>
+												</tr>
+
+												<tr class='1'>
+													<td>
+														<input type="radio" name="f1761"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1761"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1761"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1761"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1761"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Etika</b></td>
+												</tr>
+
+												<tr class='2'>
+													<td>
+														<input type="radio" name="f1763"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1763"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1763"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1763"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1763"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Keahlian berdasarkan bidang ilmu</b></td>
+												</tr>
+
+												<tr class='3'>
+													<td>
+														<input type="radio" name="f1765"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1765"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1765"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1765"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4" checked>
+													</td>
+													<td>
+														<input type="radio" name="f1765"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5">
+													</td>
+													<td><b>Bahasa Inggris</b></td>
+												</tr>
+
+												<tr class='4'>
+													<td>
+														<input type="radio" name="f1767"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1767"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1767"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1767"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1767"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Penggunaan Teknologi Informasi</b></td>
+												</tr>
+
+												<tr class='5'>
+													<td>
+														<input type="radio" name="f1769"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1769"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1769"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1769"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1769"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Komunikasi</b></td>
+												</tr>
+
+												<tr class='6'>
+													<td>
+														<input type="radio" name="f1771"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1771"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1771"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1771"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1771"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Kerja sama Tim</b></td>
+												</tr>
+
+												<tr class='7'>
+													<td>
+														<input type="radio" name="f1773"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1773"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1773"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1773"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1773"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Pengembangan Diri</b></td>
+												</tr>
+											</table>
+
+											<hr>
+											<font color="blue"><i> Pada saat ini, pada tingkat mana kompetensi di bawah
+													ini diperlukan dalam pekerjaan? (B)</font><br>
+											<font color="red">[ f17 ]</font></i>
+											<hr>
+											<table class='table'>
+												<tr>
+													<td colspan="2"><b>Sangat Rendah</b></td>
+													<td></td>
+													<td colspan="2"><b>Sangat Tinggi</b></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>
+														<h4><b>1</h4></b>
+													</td>
+													<td>
+														<h4><b>2</h4></b>
+													</td>
+													<td>
+														<h4><b>3</h4></b>
+													</td>
+													<td>
+														<h4><b>4</h4></b>
+													</td>
+													<td>
+														<h4><b>5</h4></b>
+													</td>
+													<td></td>
+												</tr>
+
+												<tr class='1'>
+													<td>
+														<input type="radio" name="f1762"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1762"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1762"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1762"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1762"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Etika</b></td>
+												</tr>
+
+												<tr class='2'>
+													<td>
+														<input type="radio" name="f1764"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1764"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1764"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1764"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1764"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Keahlian berdasarkan bidang ilmu</b></td>
+												</tr>
+
+												<tr class='3'>
+													<td>
+														<input type="radio" name="f1766"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1766"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1766"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1766"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4" checked>
+													</td>
+													<td>
+														<input type="radio" name="f1766"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5">
+													</td>
+													<td><b>Bahasa Inggris</b></td>
+												</tr>
+
+												<tr class='4'>
+													<td>
+														<input type="radio" name="f1768"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1768"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1768"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1768"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1768"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Penggunaan Teknologi Informasi</b></td>
+												</tr>
+
+												<tr class='5'>
+													<td>
+														<input type="radio" name="f1770"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1770"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1770"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1770"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1770"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Komunikasi</b></td>
+												</tr>
+
+												<tr class='6'>
+													<td>
+														<input type="radio" name="f1772"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1772"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1772"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1772"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1772"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Kerja sama Tim</b></td>
+												</tr>
+
+												<tr class='7'>
+													<td>
+														<input type="radio" name="f1774"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="1">
+													</td>
+													<td>
+														<input type="radio" name="f1774"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="2">
+													</td>
+													<td>
+														<input type="radio" name="f1774"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="3">
+													</td>
+													<td>
+														<input type="radio" name="f1774"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="4">
+													</td>
+													<td>
+														<input type="radio" name="f1774"
+															style="height:20px; width:20px; vertical-align: middle;"
+															value="5" checked>
+													</td>
+													<td><b>Pengembangan Diri</b></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+
+									<!--
+											
+ 											<tr>
+                                                    <td> 
+														<img alt="" src="./img/16.png" /> 
+													</td>
+													
+                                                    <td class="numeric" colspan="2"> 
+														<font color="blue"><i> Jika menurut anda pekerjaan anda saat ini tidak sesuai dengan pendidikan anda, mengapa anda mengambilnya? Jawaban bisa lebih dari satu </font><font color="red">[ f16 ]</font></i> 													
+														<div class="form-group">
+													<div class="col-md-12">  
+													                                                          
+															<input type="checkbox" class="require-one" value="1" name="f1601" checked /> [1] Pertanyaan tidak sesuai; pekerjaan saya sekarang sudah sesuai dengan pendidikan saya.
+																												<input type="checkbox" class="require-one" value="1" name="f1601" /> [1] Pertanyaan tidak sesuai; pekerjaan saya sekarang sudah sesuai dengan pendidikan saya.
+																											<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="2" name="f1602" checked /> [2] Saya belum mendapatkan pekerjaan yang lebih sesuai.
+																												<input type="checkbox" class="require-one" value="2" name="f1602" /> [2] Saya belum mendapatkan pekerjaan yang lebih sesuai.
+														
+														<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="3" name="f1603" checked /> [3] Di pekerjaan ini saya memeroleh prospek karir yang baik.
+																												<input type="checkbox" class="require-one" value="3" name="f1603" /> [3] Di pekerjaan ini saya memeroleh prospek karir yang baik.
+														
+													<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="4" name="f1604" checked /> [4] Saya lebih suka bekerja di area pekerjaan yang tidak ada hubungannya dengan pendidikan saya.
+																												<input type="checkbox" class="require-one" value="4" name="f1604" /> [4] Saya lebih suka bekerja di area pekerjaan yang tidak ada hubungannya dengan pendidikan saya.
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="5" name="f1605" checked /> [5] Saya dipromosikan ke posisi yang kurang berhubungan dengan pendidikan saya dibanding posisi sebelumnya.
+																												<input type="checkbox" class="require-one" value="5" name="f1605" /> [5] Saya dipromosikan ke posisi yang kurang berhubungan dengan pendidikan saya dibanding posisi sebelumnya.
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="6" name="f1606" checked /> [6] Saya dapat memeroleh pendapatan yang lebih tinggi di pekerjaan ini.
+																												<input type="checkbox" class="require-one" value="6" name="f1606" /> [6] Saya dapat memeroleh pendapatan yang lebih tinggi di pekerjaan ini.
+														
+													<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="7" name="f1607" checked /> [7] Pekerjaan saya saat ini lebih aman/terjamin/secure
+																												<input type="checkbox" class="require-one" value="7" name="f1607" /> [7] Pekerjaan saya saat ini lebih aman/terjamin/secure
+																																								
+													<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="8" name="f1608" checked /> [8] Pekerjaan saya saat ini lebih menarik
+													//
+															<input type="checkbox" class="require-one" value="8" name="f1608" /> [8] Pekerjaan saya saat ini lebih menarik
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="9" name="f1609" checked /> [9] Pekerjaan saya saat ini lebih memungkinkan saya mengambil pekerjaan tambahan/jadwal yang fleksibel, dll.
+																												<input type="checkbox" class="require-one" value="9" name="f1609" /> [9] Pekerjaan saya saat ini lebih memungkinkan saya mengambil pekerjaan tambahan/jadwal yang fleksibel, dll.
+														
+													<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="10" name="f1610" checked />  [10] Pekerjaan saya saat ini lokasinya lebih dekat dari rumah saya
+																												<input type="checkbox" class="require-one" value="10" name="f1610" />  [10] Pekerjaan saya saat ini lokasinya lebih dekat dari rumah saya.
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="11" name="f1611" checked /> [11] Pekerjaan saya saat ini dapat lebih menjamin kebutuhan keluarga saya.
+																												<input type="checkbox" class="require-one" value="11" name="f1611" /> [11] Pekerjaan saya saat ini dapat lebih menjamin kebutuhan keluarga saya.
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="12" name="f1612" checked /> [12] Pada awal meniti karir ini, saya harus menerima pekerjaan yang tidak berhubungan dengan pendidikan saya.
+																												<input type="checkbox" class="require-one" value="12" name="f1612" /> [12] Pada awal meniti karir ini, saya harus menerima pekerjaan yang tidak berhubungan dengan pendidikan saya.
+																										<br>
+													                                                          
+															<input type="checkbox" class="require-one" value="13" name="f1613" checked /> [13] Lainnya:
+																												<input type="checkbox" class="require-one" value="13" name="f1613" /> [13] Lainnya:
+																												
+															</div>																	
+														</div>													
+													
+													<div class="form-group">
+														<div class="col-md-12">
+														<div class="input-group">
+														<input type="text" name="f1614" id="f1614" class="form-control" placeholder="" value=""> 
+															<span class="help-block">
+																Jika memilih Lainnya, silahkan ketik di kotak ini
+															</span>
+														</div>
+														</div>
+													</div>
+
+													
+												</td>
+                                            </tr>	-->
+
+									</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="form-actions">
+								<div class="row">
+									<div class="col-md-offset-5 col-md-6">
+										<button type="submit" class="btn green-jungle" name="submit" id="submit"> Simpan
+											<i class=""></i> </button>
+									</div>
+								</div>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- BEGIN FOOTER -->
+	<div class="page-footer">
+		<div class="page-footer-inner"> 2023 &copy; SUB BAGIAN MINAT, PENALARAN DAN INFORMASI KEMAHASISWAAN BAAKPSI
+			UNIVERSITAS NUSA CENDANA
+		</div>
+		<div class="scroll-to-top">
+			<i class="icon-arrow-up"></i>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN CORE PLUGINS -->
+	<script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!-- END CORE PLUGINS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<!--<script src="./assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>-->
+	<!--<script src="./assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>-->
+	<!--<script src="./assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>-->
+	<script src="./assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+
+	<script src="./assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript">
+	</script>
+	<script src="./assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript">
+	</script>
+	<script src="./assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+	<!--<script src="./assets/global/plugins/bootstrap-markdown/lib/markdown.js" type="text/javascript"></script>
+        <script src="./assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script>-->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="./assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/jquery-bootpag/jquery.bootpag.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/holder.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<!--<script src="./assets/pages/scripts/ui-sweetalert.min.js" type="text/javascript"></script>-->
+	<!-- END PAGE LEVEL SCRIPTS -->
+	<!-- END PAGE LEVEL PLUGINS -->
+	<!-- BEGIN THEME GLOBAL SCRIPTS -->
+	<script src="./assets/global/scripts/app.min.js" type="text/javascript"></script>
+	<!-- END THEME GLOBAL SCRIPTS -->
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<!--<script src="./assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>-->
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<script src="./assets/global/scripts/datatable.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript">
+	</script>
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+	<script src="./assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+	<script src="./assets/pages/scripts/form-validation.min.js" type="text/javascript"></script>
+	<script src="./assets/global/plugins/jquery-validation/js/pesan.js" type="text/javascript"></script>
+	<script src="./assets/pages/scripts/ui-general.min.js" type="text/javascript"></script>
+	<!-- END PAGE LEVEL SCRIPTS -->
+	<!-- END PAGE LEVEL SCRIPTS -->
+	<!-- BEGIN THEME LAYOUT SCRIPTS -->
+	<script src="./assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+	<script src="./assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+	<script src="./assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+	<script src="./assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+	<!-- END THEME LAYOUT SCRIPTS -->
+
+	<script>
+		$(document).ready(function () {
+			$('#clickmewow').click(function () {
+				$('#radio1003').attr('checked', 'checked');
+			});
+		})
+	</script>
+	<script>
+		$(document).ready(function () {
+			var value = $("#level_tmpt_kerja").val();
+
+			if (value == '' || value == undefined) {
+				$("#negara_kerja").hide();
+				$("#local_kerja").hide();
+			} else {
+				if ((value == 'L') || (value == 'N')) {
+					$("#local_kerja").show();
+					$("#negara_kerja").hide();
+				} else if (value == 'I') {
+					$("#local_kerja").hide();
+					$("#negara_kerja").show();
+				}
+			}
+		});
+
+		$('#level_tmpt_kerja').on('change', function () {
+			var level_tmpt_kerja = $('#level_tmpt_kerja').val();
+			//alert(level_tmpt_kerja);
+			if ((level_tmpt_kerja == 'L') || (level_tmpt_kerja == 'N')) {
+				$("#local_kerja").show();
+				$("#negara_kerja").hide();
+			} else if (level_tmpt_kerja == 'I') {
+				$("#negara_kerja").show();
+				$("#local_kerja").hide();
+			}
+		});
+	</script>
+
+</body>
+
+</html>
