@@ -58,7 +58,7 @@ $result11 = mysqli_query($conn, $query11);
 
 
 if (isset($_POST["submit"])) {
-    if (simpanPertanyaan1($_POST) > 0 && simpanPertanyaan2($_POST) > 0 && simpanPertanyaan3($_POST) > 0 && simpanPertanyaan4($_POST) > 0 && simpanPertanyaan5($_POST) > 0 && simpanPertanyaan6($_POST) > 0 && simpanPertanyaan8($_POST) > 0 && simpanPertanyaan9($_POST) > 0 && simpanPertanyaan10($_POST) > 0 && simpanPertanyaan11($_POST) > 0 && simpanPertanyaan12($_POST) > 0 && simpanPertanyaan13($_POST) > 0 && simpanPertanyaan14($_POST) > 0 && simpanPertanyaan15($_POST) > 0 && simpanPertanyaan16($_POST) > 0 && simpanPertanyaan17($_POST) > 0 && simpanPertanyaan18($_POST) > 0 && simpanPertanyaan19($_POST) > 0) {
+    if (simpanPertanyaan1($_POST) > 0 && simpanPertanyaan2($_POST) > 0 && simpanPertanyaan3($_POST) > 0 && simpanPertanyaan4($_POST) > 0 && simpanPertanyaan5($_POST) > 0 && simpanPertanyaan6($_POST) > 0 && simpanPertanyaan7($_POST) > 0 && simpanPertanyaan8($_POST) > 0 && simpanPertanyaan9($_POST) > 0 && simpanPertanyaan10($_POST) > 0 && simpanPertanyaan11($_POST) > 0 && simpanPertanyaan12($_POST) > 0 && simpanPertanyaan13($_POST) > 0 && simpanPertanyaan14($_POST) > 0 && simpanPertanyaan15($_POST) > 0 && simpanPertanyaan16($_POST) > 0 && simpanPertanyaan17($_POST) > 0 && simpanPertanyaan18($_POST) > 0) {
         echo "
             <script>
                 alert('Terimakasih Sudah Mengisi Kuisioner 🖕');

@@ -496,7 +496,7 @@ function simpanPertanyaan6($data)
 
 
 
-function simpanPertanyaan8($data)
+function simpanPertanyaan7($data)
 {
     global $conn;
     $idPertanyaan8 = 21;
@@ -515,7 +515,7 @@ function simpanPertanyaan8($data)
     }
 }
 
-function simpanPertanyaan9($data)
+function simpanPertanyaan8($data)
 {
     global $conn;
     $idPertanyaan9 = 22;
@@ -534,7 +534,7 @@ function simpanPertanyaan9($data)
     }
 }
 
-function simpanPertanyaan10($data)
+function simpanPertanyaan9($data)
 {
     global $conn;
     $idPertanyaan10 = 23;
@@ -556,7 +556,7 @@ function simpanPertanyaan10($data)
 }
 
 
-function simpanPertanyaan11($data)
+function simpanPertanyaan10($data)
 {
     global $conn;
     $idPertanyaan11 = 24;
@@ -575,7 +575,7 @@ function simpanPertanyaan11($data)
     }
 }
 
-function simpanPertanyaan12($data)
+function simpanPertanyaan11($data)
 {
     global $conn;
     $idPertanyaan12 = 25;
@@ -594,7 +594,7 @@ function simpanPertanyaan12($data)
     }
 }
 
-function simpanPertanyaan13($data)
+function simpanPertanyaan12($data)
 {
     global $conn;
     $idPertanyaan13 = 26;
@@ -614,7 +614,7 @@ function simpanPertanyaan13($data)
     }
 }
 
-function simpanPertanyaan14($data)
+function simpanPertanyaan13($data)
 {
     global $conn;
     $idPertanyaan14 = 27;
@@ -641,7 +641,7 @@ function simpanPertanyaan14($data)
     }
 }
 
-function simpanPertanyaan15($data)
+function simpanPertanyaan14($data)
 {
     global $conn;
     $idPertanyaan15 = 28;
@@ -663,7 +663,7 @@ function simpanPertanyaan15($data)
     }
 }
 
-function simpanPertanyaan16($data)
+function simpanPertanyaan15($data)
 {
     global $conn;
     $idPertanyaan16 = 29;
@@ -683,7 +683,7 @@ function simpanPertanyaan16($data)
     }
 }
 
-function simpanPertanyaan17($data)
+function simpanPertanyaan16($data)
 {
     global $conn;
     $idPertanyaan17 = 30;
@@ -712,7 +712,7 @@ function simpanPertanyaan17($data)
     }
 }
 
-function simpanPertanyaan18($data)
+function simpanPertanyaan17($data)
 {
     global $conn;
     $idPertanyaan18 = 31;
@@ -733,7 +733,7 @@ function simpanPertanyaan18($data)
     }
 }
 
-function simpanPertanyaan19($data)
+function simpanPertanyaan18($data)
 {
     global $conn;
     $idPertanyaan19 = 33;
