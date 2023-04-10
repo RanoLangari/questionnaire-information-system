@@ -1,10 +1,11 @@
 <?php
+ini_set("display_errors", "1");
+error_reporting(E_ALL);
 
 $conn = mysqli_connect("localhost", "root", "", "web_pasca");
 session_start();
 
 require 'vendor/autoload.php';
-error_reporting(0);
 
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -618,17 +619,17 @@ function simpanPertanyaan13($data)
 {
     global $conn;
     $idPertanyaan14 = 27;
-    $Jawaban14 = $data['pert14'];
+    $Jawaban14 = $data["pert14"];
     $jawaban14Text = $data['pert14Text'];
     $id_user = $data['id_user'];
 
     $cek_kuisioner = mysqli_query($conn, "SELECT * FROM tbl_jawaban WHERE id_user = '$id_user' AND id_pertanyaan = '$idPertanyaan14'");
     if (mysqli_num_rows($cek_kuisioner) === 0) {
         if ($Jawaban14 === "90") {
-            mysqli_query($conn, "INSERT INTO tbl_jawaban VALUES(NULL, '$id_user', '$idPertanyaan14','$Jawaban14','$jawaban14Text')");
+            mysqli_query($conn, "INSERT INTO tbl_jawaban VALUES (NULL, '$id_user', '$idPertanyaan14',90,'$jawaban14Text')");
             return 1;
         } else {
-            mysqli_query($conn, "INSERT INTO tbl_jawaban VALUES(NULL, '$id_user', '$idPertanyaan14','$Jawaban14',NULL)");
+            mysqli_query($conn, "INSERT INTO tbl_jawaban VALUES (0, '$id_user', '$idPertanyaan14','$Jawaban14',NULL)");
             return 1;
         }
     } else {

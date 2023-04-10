@@ -5,7 +5,7 @@
 require('../config.php');
 
 if (!isset($_SESSION['user'])) {
-    header('Location: ../index.php');
+    header('Location: ../NotFound.php');
 }
 $id_user = $_SESSION["id"];
 $row = query("SELECT * FROM user WHERE id = $id_user")[0];
@@ -150,8 +150,6 @@ $tes13 = mysqli_fetch_assoc($cek_user13);
 if (mysqli_num_rows($cek_user13) > 0) {
     if ($tes13['id_pilihan_jawaban'] != NULL) {
         $val14 = $tes13['id_pilihan_jawaban'];
-    } else {
-        $val14 = 0;
     }
 }
 
